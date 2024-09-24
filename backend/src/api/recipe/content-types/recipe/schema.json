@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "receita": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::receita.receita",
+      "inversedBy": "recipe"
+    },
+    "ingredients": {
+      "type": "json"
+    },
+    "time": {
+      "type": "string"
+    },
+    "description": {
+      "type": "json"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "recipe"
+    },
+    "dificulty": {
+      "type": "string"
+    }
+  }
+}

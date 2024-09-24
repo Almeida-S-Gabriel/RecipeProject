@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_teste_covers",
+  "info": {
+    "displayName": "cover"
+  },
+  "options": {},
+  "attributes": {
+    "ll": {
+      "type": "string"
+    }
+  }
+}
